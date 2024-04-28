@@ -37,4 +37,27 @@ public class TwitterAccount{
         } 
         return false;
     }
+
+    public static void main(String[] args) {
+        TwitterAccount myAccount = new TwitterAccount("2134", "gabet@gmail.com");
+        myAccount.addHashtag("#yup");
+        myAccount.addHashtag("#cool");
+        myAccount.addHashtag("#sweet");
+        myAccount.addHashtag("#nice");
+        myAccount.addHashtag("#good");
+
+        if(myAccount.checkHashtag("#cool") == true) {
+            System.out.println("#cool is on the hastags ArrayList");
+        } else {
+            System.out.println("This hashtag is not on the ArrayList");
+        }
+
+        System.out.println();
+
+        if(myAccount.checkHashtag("#where") == true) {
+            System.out.println("#cool is on the hastags ArrayList");
+        } else {
+            System.out.println("#where is not on the ArrayList");
+        }
+    }
 }
