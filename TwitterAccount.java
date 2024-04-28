@@ -49,15 +49,15 @@ public class TwitterAccount{
         if(myAccount.checkHashtag("#cool") == true) {
             System.out.println("#cool is on the hastags ArrayList");
         } else {
-            System.out.println("This hashtag is not on the ArrayList");
+            System.out.println("#cool hashtag is NOT on the ArrayList");
         }
 
         System.out.println();
 
         if(myAccount.checkHashtag("#where") == true) {
-            System.out.println("#cool is on the hastags ArrayList");
+            System.out.println("#where is on the hastags ArrayList");
         } else {
-            System.out.println("#where is not on the ArrayList");
+            System.out.println("#where is NOT on the ArrayList");
         }
     }
 }
